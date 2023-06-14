@@ -1,0 +1,30 @@
+/* comentario en sass y css */
+
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    // background-image: url("../img/imagen\ de\ fondo.jpg");
+    // background-color: #222;
+    background: rgb(255,205,8);
+    background: linear-gradient(0deg, rgba(255,205,8,0.8785889355742297) 0%, rgba(0,18,9,1) 15%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: system-ui, sans-serif;
+}
+//import
+@import "./utilidades/variables";
+@import "./utilidades/mixins";
+
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+
+
+
+
+

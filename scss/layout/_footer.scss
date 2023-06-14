@@ -1,0 +1,29 @@
+
+footer {
+    @include flex(column, flex-start, center);
+    padding: 1rem 0;
+    gap: 1rem;
+    border-top: 1px solid black;
+    color: black;
+    font-weight: bold;
+    .redes-sociales {
+        display: flex;
+        gap: 1rem;
+        img {
+            width: 40px; 
+            // opacity: .8;
+            &:hover {
+                // opacity: 1;
+                border: 1px solid goldenrod;
+                border-radius: 50%;
+                padding: -2px;
+            }
+        }
+    }
+    .riot-logo {
+        &hover{
+            background-color: white;
+
+        } 
+    }
+}

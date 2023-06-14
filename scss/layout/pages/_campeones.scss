@@ -1,0 +1,44 @@
+
+.main-campeones {
+    width: 100%;
+    @include flex(row, center, flex-start);
+    padding: 1rem;
+    .main-campeones-container {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        max-width: 1200px;
+        div {
+            @include flex(column, flex-start, center);
+            position: relative;
+            opacity: .8;
+            img {
+                border-radius: 10px;
+            }
+            strong {
+                background-color: aqua;
+                width: 100%;
+                font-style: italic;
+                padding: .3rem .5rem;
+                font-size: 1.2rem;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bolder;
+                position: absolute;
+                bottom: 0;
+                border-radius: 0px 0 10px 10px;
+            }
+            &:hover {
+                text-align: center;
+                opacity: 1;
+            }
+        }
+    }
+}
+#botonarriba{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+  }

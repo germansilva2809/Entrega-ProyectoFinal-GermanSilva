@@ -1,0 +1,50 @@
+header{
+    width: 100%;
+    color: white;
+    border-bottom: 1px solid black;
+    nav {
+        max-width: 1000px;
+        div div {
+            .navbar-nav {
+                .nav-link.show {
+                    color: white;
+                }
+                li .nav-link{
+                    color: white;
+                    opacity: 0.8;
+                    font-size: 1.2rem;
+                    &:hover{
+                        opacity: 1;
+                        color: white;
+                    }
+                }
+            }
+        } 
+    } 
+    
+    div {
+        .navbar-brand {
+            height: 100px;
+            margin: 0;
+            .logo {
+                height: 100%;
+                width: 80%;
+            }
+        }
+        .navbar-toggler {
+            background-color: #d9d9d9;
+            font-size: 1rem;
+        }
+    }
+    .navbar {
+        @include flex(row, flex-start, flex-start)
+    }
+}
+@media (min-width: 992px) {
+    header {
+        @include flex(row, center, center);
+        nav div div ul {
+            gap: 3rem;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.main-index {
+    width: 100%;
+    @include flex(row, center, flex-start);
+}
+.main-index-container {
+    @include flex(column, flex-start, center);
+    gap: 2rem;
+    padding: 1rem 0;
+    div {
+        @include flex(column, flex-start, center);
+        gap: 1rem;
+        text-align: center;
+        padding: 0 1.5rem;
+        line-height: 1.7rem;
+        font-size: 1.1rem;
+        strong {
+            font-weight: bold;
+            font-size: 2rem;
+            h1, h2 {
+                font-weight: bold;
+                font-size: 2rem;
+            }
+        }
+    }
+    img {
+        width: 90%;
+        border-radius: 15px;
+        padding: .5rem;
+        border: 1px solid $color-gold;
+        opacity: .8;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .main-index-container {
+        @include flex(row, center, flex-start);
+        flex-wrap: wrap;
+        width: 90%;
+        max-width: 900px;
+        img {
+            order: 2;
+            width: 100%;
+        }
+        div {
+            width: 45%;
+            order: 1;
+        }
+    }
+}

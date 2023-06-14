@@ -1,0 +1,56 @@
+.main-modos {
+    width: 100%;
+    @include flex(row, center, flex-start);
+    .main-modos-container {
+        width: 90%;
+        max-width: 1000px;
+        text-align: center;
+        padding: 1rem 0;
+        @include flex (column, flex-start, center);
+        gap: 1.5rem;
+        section {
+            @include flex(column, flex-start, center);
+            gap: 1rem;
+            width: 100%;
+            max-width: 1000px;
+            h2, h3, h4 {
+                font-size: 1.4rem;
+                text-transform: uppercase;
+            }
+            img {
+                width: 90%;
+                border-radius: 15px;
+                padding: .5rem;
+                border: 1px solid goldenrod;
+                opacity: .8;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .main-modos .main-modos-container section{
+        display: grid;
+        grid-template-areas: 
+        "img title title"
+        "img text text"
+        ;
+        text-align: left;
+        gap: 1.5rem;
+        h2, h3, h4 {
+            grid-area: title;
+            width: 100%;
+        }
+        img {
+            grid-area: img;
+            width: 100%;
+        }
+        p {
+            grid-area: text;
+            width: 100%;
+        }
+    }
+}

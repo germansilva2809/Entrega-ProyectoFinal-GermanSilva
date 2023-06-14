@@ -1,0 +1,13 @@
+// importar los archivos secundarios de sass
+
+@import "../utilidades/variables";
+@import "../utilidades/listas";
+
+
+
+.header-nosotros{
+    background-color: $color-principal;
+    h1{
+        color: nth($lista-colores , 4 );
+    }
+}
