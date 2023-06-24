@@ -1,0 +1,39 @@
+
+.container{
+    @include flex(row, center, flex-start);
+
+}
+
+form{
+    color:rgb(250, 227, 21) ;
+    margin: 0;
+    padding: 0px;
+    max-width: 1000px;
+}
+
+h1{
+    text-align: center;
+
+}
+
+@media (min-width:576px){
+    form{
+        .col-12{
+            width: 50%;
+            
+        }
+        .col-9{
+            width: 100%;
+            select{
+                width: 50%;
+            }
+
+        }
+        .tyc{
+            width: 100%;
+            .form-check{
+                width: 100%;
+            }
+        }
+    }
+}

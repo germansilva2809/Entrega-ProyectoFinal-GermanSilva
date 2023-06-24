@@ -1,11 +1,12 @@
 
 footer {
-    @include flex(column, flex-start, center);
+    @include flex(column, flex-end, center);
     padding: 1rem 0;
     gap: 1rem;
     border-top: 1px solid black;
     color: black;
     font-weight: bold;
+    min-height: 20vh;
     .redes-sociales {
         display: flex;
         gap: 1rem;

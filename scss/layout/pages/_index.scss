@@ -16,9 +16,12 @@
         strong {
             font-weight: bold;
             font-size: 2rem;
-            h1, h2 {
+            h1{
                 font-weight: bold;
                 font-size: 2rem;
+            }
+            h2{
+            @extend h1;
             }
         }
     }
